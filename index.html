@@ -23,9 +23,64 @@
 </head>
 
 <body>
+
+    <!-- 置頂鍵 -->
+    <div id="scrolltop">Top</div>
+
+    <!-- PC導覽列 -->
+    <div class="open">快速選單</div>
+
+
+    <nav class="menu_pc">
+        <div class="close">
+            <p>✖</p>
+        </div>
+        <img src="./images/menu.png" alt="">
+        <ul>
+            <li class="anchor-link"><a href="#free">下單免運</a></li>
+            <li class="anchor-link"><a href="#restocking">空空賞補貨</a></li>
+            <li class="anchor-link"><a href="#box">箱購免運</a></li>
+            <li class="anchor-link"><a href="#hotstore">熱銷店家</a></li>
+            <li class="anchor-link"><a href="#new">新星夯品</a></li>
+            <li class="anchor-link"><a href="#other">更多商品</a></li>
+            <li class="anchor-link"><a href="#brand">熱門品牌</a></li>
+            <li class="top anchor-link"><a href="#kv">Top</a></li>
+        </ul>
+    </nav>
+
+    <!-- 浮動主選單_手機 -->
+    <nav class="menu_MB">
+        <ul class="mb-0 p-0">
+            <li><a href="#free">下單免運</a></li>
+            <li><a href="#restocking">空空賞補貨</a></li>
+            <li><a href="#box">箱購免運</a></li>
+            <li><a href="#hotstore">熱銷店家</a></li>
+            <li><a href="#new">新星夯品</a></li>
+            <li><a href="#other">更多商品</a></li>
+            <li><a href="#brand">熱門品牌</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- KV -->
     <div class="kv">
-        <img class="bg" src="./images/kvbg.jpg" alt="">
+        <img class="bg" src="./images/kvbg.jpg" alt="" id="kv">
         <img class="kvword animate__animated animate__zoomInDown" src="./images/kv.png" alt="">
         <img class="logo" src="./images/logo.png" alt="">
 
@@ -37,7 +92,7 @@
     </div>
 
     <!-- 免運券 -->
-    <div class="free pt-4 pt-md-5 px-3 px-md-5">
+    <div class="free pt-4 pt-md-5 px-3 px-md-5" id="free">
         <img src="./images/free0.png" alt="">
         <div class="row g-2 py-2 py-md-3 py-lg-4">
             <div class="col-4">
@@ -57,7 +112,7 @@
 
 
     <!-- 空空賞補貨 -->
-    <div class="restocking cardbox">
+    <div class="restocking cardbox" id="restocking">
         <img class="w-100 d-none d-md-block" src="./images/title_restocking_pc.png" alt="">
         <img class="w-100 d-block d-md-none mt-4" src="./images/title_restocking_mb.png" alt="">
         <ul class="list mb-0">
@@ -168,7 +223,7 @@
 
 
     <!-- 箱購最划算 -->
-    <div class="restocking cardbox mt-5">
+    <div class="restocking cardbox mt-5" id="box">
         <img class="w-100 d-none d-md-block" src="./images/title_box_pc.png" alt="">
         <img class="w-100 d-block d-md-none mt-4" src="./images/title_box_mb.png" alt="">
         <ul class="list mb-0">
@@ -284,7 +339,7 @@
 
 
     <!-- 熱門商店 -->
-    <div class="hot hotstore mx-auto mt-4 mt-lg-5 px-2 ">
+    <div class="hot hotstore mx-auto mt-4 mt-lg-5 px-2" id="hotstore">
         <img class="d-none d-md-block w-100 mx-auto mb-1 px-2" mx-auto mb-1 src="./images/title_hotstore_pc.png" alt="">
         <img class="d-black d-md-none w-100 mx-auto mb-1 px-2" src="./images/title_hotstore_mb.png" alt="">
 
@@ -331,7 +386,7 @@
 
 
     <!-- 新星夯品 -->
-    <div class="restocking cardbox mt-5">
+    <div class="restocking cardbox mt-5" id="new">
         <img class="w-100 d-none d-md-block" src="./images/title_new_pc.png" alt="">
         <img class="w-100 d-block d-md-none mt-4" src="./images/title_new_mb.png" alt="">
         <ul class="list mb-0">
@@ -447,7 +502,7 @@
 
 
     <!-- 更多商品 -->
-    <div class="restocking cardbox mt-5 other">
+    <div class="restocking cardbox mt-5 other" id="other">
         <img class="w-100 d-none d-md-block" src="./images/title_other_pc.png" alt="">
         <img class="w-100 d-block d-md-none mt-4" src="./images/title_other_mb.png" alt="">
         <ul class="list mb-0">
@@ -558,7 +613,7 @@
 
 
     <!-- 熱門品牌 -->
-    <div class="hot brand mx-auto mt-4 mt-lg-5 px-2 ">
+    <div class="hot brand mx-auto mt-4 mt-lg-5 px-2" id="brand">
         <img class="d-none d-md-block w-100 mx-auto mb-1 px-2" mx-auto mb-1 src="./images/title_brand_pc.png" alt="">
         <img class="d-black d-md-none w-100 mx-auto mb-1 px-2" src="./images/title_brand_mb.png" alt="">
 
@@ -632,6 +687,7 @@
     <script src="./js/jquery-3.7.1.js"></script>
     <!-- JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
