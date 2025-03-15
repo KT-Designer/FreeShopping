@@ -1,0 +1,335 @@
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    background-color: #FF3C4F;
+}
+
+
+.kv {
+    position: relative;
+}
+
+.kv .bg {
+    width: 100%;
+
+}
+
+.kv .kvword {
+    width: 54%;
+    position: absolute;
+    bottom: 12%;
+    left: 22%;
+}
+
+.kv .logo {
+    width: 22%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kv .LF-money1 {
+    width: 6%;
+    position: fixed;
+    top: 24%;
+    left: 4%;
+    animation: LF-money1 3s alternate infinite ease-in-out;
+    position: fixed;
+}
+
+@keyframes LF-money1 {
+    0% {
+        transform: translateY(-7px);
+
+    }
+
+    50% {
+        transform: translateY(14px);
+
+    }
+
+
+    100% {
+        transform: translateY(-14px);
+
+    }
+
+
+}
+
+
+
+
+.kv .LF-money2 {
+    width: 7%;
+    position: fixed;
+    top: 52%;
+    left: 8%;
+    animation: LF-money2 3s infinite alternate ease-in-out;
+
+}
+
+
+@keyframes LF-money2 {
+    0% {
+        transform: translateY(6px);
+
+    }
+
+    50% {
+        transform: translateY(-12px);
+
+    }
+
+
+    100% {
+        transform: translateY(12px);
+
+    }
+
+
+}
+
+
+
+
+
+
+.kv .RT-money1 {
+    width: 6%;
+    position: fixed;
+    top: 32%;
+    right: 9%;
+    animation: RT-money1 3s infinite alternate ease-in-out;
+}
+
+@keyframes RT-money1 {
+    0% {
+        transform: translateY(7px);
+
+    }
+
+    50% {
+        transform: translateY(-14px);
+
+    }
+
+
+    100% {
+        transform: translateY(14px);
+
+    }
+
+
+}
+
+/* 免運券 */
+.free {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.free img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.free img:hover {
+    transform: translateY(-12px);
+}
+
+
+/* 空空賞補貨 */
+.restocking {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding: 0 16px;
+}
+
+.cardbox a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.cardbox .list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-image: url(../images/title_bg_m.png);
+    background-repeat: repeat;
+    background-size: contain;
+    padding: 26px 46px;
+
+}
+
+.cardbox .list .card {
+    background-color: #FFFFFF;
+    padding: 8px;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+.cardbox .list .card:hover {
+    transform: translateY(-10px);
+
+}
+
+.cardbox .list img {
+    width: 100%;
+}
+
+.cardbox .card h1 {
+    font-size: 14px;
+    margin: 8px 0px;
+    font-family: 'Noto Sans TC';
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 34px;
+}
+
+.cardbox .list .card:hover h1 {
+    color: #FF3C4F;
+}
+
+.cardbox .card .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.cardbox .card .container .price {
+    text-decoration: line-through;
+    color: #808080;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+
+.cardbox .card .container .sale {
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #FF3C4F;
+    font-size: 22px;
+}
+
+
+
+/* 熱門商店 */
+.hot {
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.hot .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.hot .container img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hot .container img:hover {
+    transform: translateY(-8px);
+}
+
+
+/* 熱門品牌 */
+.brand .container {
+    grid-template-columns: repeat(6, 1fr);
+    position: relative;
+
+}
+
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Noto Sans TC';
+    padding: 14px 0px;
+    background-color: #000000;
+    margin-top: 120px;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+    /* KV */
+    .kv .LF-money1,
+    .kv .LF-money2,
+    .kv .RT-money1 {
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+    /* 空空賞補貨 */
+    .cardbox .list {
+        padding: 26px 36px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        background-image: none;
+        padding: 26px 0px;
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width:576px) {
+
+
+    /* 空空賞補貨 */
+
+    .cardbox .list {
+        grid-template-columns: repeat(2, 1fr);
+        background-image: none;
+        padding: 16px 0px;
+    }
+
+
+
+    /* 熱門商店 */
+    .hot .container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* 熱門品牌 */
+    .brand .container {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+
+
+}
